@@ -139,6 +139,31 @@ const Mutation = new GraphQLObjectType({
                         description: args.description
                     })
                 }
+            },
+            addMaterial: {
+                type: Material,
+                args: {
+                    name: {
+                        type: new GraphQLNonNull(GraphQLString)
+                    },
+                    cover: {
+                        type: new GraphQLNonNull(GraphQLString)
+                    },
+                    url: {
+                        type: new GraphQLNonNull(GraphQLString)
+                    },
+                    categoryId: {
+                        type: new GraphQLNonNull(GraphQLInt)
+                    }
+                },
+                resolve(_, args) {
+                    return Db.models.material.create({
+                        name: args.name,
+                        cover: args.cover,
+                        url: args.url,
+                        categoryId: args.categoryId
+                    })
+                }
             }
         }
     }
