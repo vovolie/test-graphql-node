@@ -1,0 +1,23 @@
+{
+  "name": "test-graphql-relay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-node": "^5.1.1",
+    "express": "^4.14.1",
+    "express-graphql": "^0.6.3",
+    "faker": "^4.1.0",
+    "graphiql": "^0.9.3",
+    "graphql": "^0.9.1",
+    "mysql": "^2.13.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sequelize": "^3.30.2"
+  }
+}
